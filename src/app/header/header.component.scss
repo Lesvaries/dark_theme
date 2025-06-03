@@ -1,6 +1,7 @@
+@import '../../theme/theme.scss';
+
 // Variables WCAG - Fond clair + texte foncé
-$color-bg:  #fae5d3 ;
-$color-text: #1a1a1a;
+
 $color-accent: #1f6feb;
 $color-hover: #3880ff;
 
@@ -9,8 +10,8 @@ $color-hover: #3880ff;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: $color-bg;
-  color: $color-text;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // subtil ombre pour profondeur
 }
@@ -48,7 +49,7 @@ $color-hover: #3880ff;
 
 .nav-link {
   text-decoration: none;
-  color: $color-text;
+  color: var(--text-color);
   position: relative;
   transition: color 0.3s ease;
 
@@ -82,7 +83,7 @@ $color-hover: #3880ff;
 .action-btn {
   background: none;
   border: none;
-  color: $color-text;
+  color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.2s ease;
